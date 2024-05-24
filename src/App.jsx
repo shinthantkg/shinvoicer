@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ThemeProvider from "./lib/ThemeContext";
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
+import DashboardProvider from "./lib/DashboardContext";
 import Dashboard from "./pages/Dashboard";
 import DashboardInvoice from "./pages/DashboardInvoice";
 import Settings from "./pages/Settings";
@@ -18,7 +20,7 @@ const App = () => {
         },
         {
             path: "/dashboard",
-            element: <Dashboard />
+            element: <DashboardProvider><Dashboard /></DashboardProvider>
         },
         {
             path: "/dashboard/invoice/:id",
@@ -34,7 +36,7 @@ const App = () => {
         }
     ]);
 
-    return <RouterProvider router={router} />
+    return <ThemeProvider><RouterProvider router={router} /></ThemeProvider>;
 };
 
 export default App;
