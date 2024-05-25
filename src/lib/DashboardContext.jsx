@@ -5,8 +5,9 @@ export const DashboardContext = createContext();
 
 const DashboardProvider = ({ children }) => {
     const [isFormShown, toggleForm] = useState(false);
+    const [selectedFilters, setSelectedFilters] = useState([]);
 
-    return <DashboardContext.Provider value={{ isFormShown, toggleForm }}>
+    return <DashboardContext.Provider value={{ isFormShown, toggleForm, selectedFilters, setSelectedFilters }}>
         {children}
     </DashboardContext.Provider>
 }

@@ -50,21 +50,6 @@ export default {
         lg: "1.5rem",
         xl: "2rem"
       },
-      width: {
-        "5v": "calc(5 * 1vw)",
-        "100p": "100px",
-        "180p": "180px"
-      },
-      height: {
-        "10v": "calc(10 * 1vh)",
-        "2/3": "75%",
-        "100p": "100px"
-      },
-      padding: {
-        "6v": "6vh",
-        "5p": "5px",
-        "12p": "12px"
-      }
     },
   },
   plugins: [],

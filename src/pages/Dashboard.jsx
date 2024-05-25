@@ -10,7 +10,7 @@ const Dashboard = () => {
                 <title>Dashboard | shinvoicer</title>
             </Helmet>
 
-            <div className={"flex flex-col items-center pt-6v gap-40"}>
+            <div className={"flex flex-col items-center pt-[6vh] gap-[12rem]"}>
                 <DashboardOverview />
                 <InvoiceList />
             </div>
